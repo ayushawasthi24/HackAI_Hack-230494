@@ -66,11 +66,11 @@ async def get_temp(ctx: Context):
 async def alert(ctx: Context, sender: str, msg: UAgentResponse):
     if msg.temperature < ctx.storage.get("min_temp"):
         ctx.logger.info(
-            f'Alert!!! The temperature at {ctx.storage.get("location")} has fallen below {ctx.storage.get("min_temp")}'
+            f'Alert!!! The temperature at {ctx.storage.get("location")} has fallen below {ctx.storage.get("min_temp")}. The current temperature is {round(msg.temperature, 2)} degrees celsius.'
         )
     if msg.temperature > ctx.storage.get("max_temp"):
         ctx.logger.info(
-            f'Alert!!! The temperature at {ctx.storage.get("location")} has risen above {ctx.storage.get("max_temp")}'
+            f'Alert!!! The temperature at {ctx.storage.get("location")} has risen above {ctx.storage.get("max_temp")}. The current temperature is {round(msg.temperature, 2)} degrees celsius.'
         )
 
 
