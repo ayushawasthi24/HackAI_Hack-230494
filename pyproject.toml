@@ -6,7 +6,11 @@ authors = ["Ayush <ayushawasthi2409@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.12"
+python-dotenv = "^1.0.0"
+uagents = "^0.6.2"
+requests = "^2.31.0"
+uuid = "^1.30"
 
 
 [build-system]
