@@ -6,6 +6,8 @@ from uagents import Agent, Context, Protocol
 from messages import UAgentResponse, WeatherRequest
 from agents.weather.weather import agent as weather_agent
 from uagents.setup import fund_agent_if_low
+from pyfiglet import figlet_format
+from colorama import Fore, Style
 
 load_dotenv()
 
@@ -22,6 +24,7 @@ assert GEOAPIFY_API_KEY, "GEOAPIFY_API_KEY environment variable missing from .en
 GEOAPIFY_URL = "https://api.geoapify.com/v1/geocode/search?text="
 
 weather_agent_address = weather_agent.address
+title = figlet_format("Welcome to ALERTIFY", font="standard")
 
 
 def get_lat_lon(city_name: str):
@@ -40,6 +43,7 @@ def get_lat_lon(city_name: str):
 
 @agent.on_event("startup")
 async def start(ctx: Context):
+    print(Fore.BLUE + title + Style.RESET_ALL)
     location = input("Please enter your location: ")
     max_temp = float(
         input(
