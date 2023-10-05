@@ -16,6 +16,10 @@ This app uses [uAgents](https://docs.fetch.ai/uAgents/) library to build agents 
 
 - The data inputs by the user is stored in the storage of the user_agent by using the storage functions of the uAgents library.
 
+- The user agent has an event handler for every 5 seconds i.e. it keeps on sending the location data to the weather agent at an interval of every 5 seconds to check the current temperature and alerts the user if required.
+
+- We have tried to add all the necessary comments for the important steps of the code.
+
 ## Prerequisites
 
 Before running this application, you need to perform the following steps:
