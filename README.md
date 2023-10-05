@@ -1,4 +1,4 @@
-# 🌦️ Weather Alert Application Readme
+# 🌦️ Alertify
 
 ## Overview
 
