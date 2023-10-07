@@ -1,0 +1,32 @@
+{
+  "coord": { "lon": 75.9244, "lat": 22.531 },
+  "weather": [
+    { "id": 800, "main": "Clear", "description": "clear sky", "icon": "01n" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 299.99,
+    "feels_like": 301.23,
+    "temp_min": 299.99,
+    "temp_max": 299.99,
+    "pressure": 1011,
+    "humidity": 63,
+    "sea_level": 1011,
+    "grnd_level": 945
+  },
+  "visibility": 10000,
+  "wind": { "speed": 3.05, "deg": 319, "gust": 3.12 },
+  "clouds": { "all": 9 },
+  "dt": 1696688405,
+  "sys": {
+    "type": 1,
+    "id": 9067,
+    "country": "IN",
+    "sunrise": 1696639763,
+    "sunset": 1696682338
+  },
+  "timezone": 19800,
+  "id": 1269743,
+  "name": "Indore",
+  "cod": 200
+}
