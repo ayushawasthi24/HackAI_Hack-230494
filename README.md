@@ -40,8 +40,8 @@ Before running this application, you need to perform the following steps:
    - Clone this repository using the following commands:
 
    ```
-   git clone https://github.com/ayushawasthi24/mystiweather
-   cd mystiweather
+   git clone https://github.com/ayushawasthi24/HackAI_Hack-230494
+   cd HackAI_Hack-230494
    ```
 
 1. **Get API Keys:**
