@@ -84,31 +84,31 @@ async def get_temp(ctx: Context):
 async def alert(ctx: Context, sender: str, msg: UAgentResponse):
     if msg.message == "Rain":
         ctx.logger.info(
-            "Heed the ethereal whispers as the heavens weep. Rainfall graces your mystical realm. (Rainfall predicted)"
+            "The sky weeps, enchanting raindrops dance, for the elves rejoice. (Rainfall predicted)"
         )
     elif msg.message == "Snow":
         ctx.logger.info(
-            "The mystical crystals descend from the sky, transforming your world into a winter wonderland. (Snow predicted)"
+            "A white blanket descends, as if the witches have cast their icy spell. (Snow predicted)"
         )
     elif msg.message == "Clouds":
         ctx.logger.info(
-            "The veiled sky conceals its secrets behind an intricate tapestry of mystical clouds. (Cloudy weather)"
+            "Mystical clouds gather, concealing secrets only the forest spirits know. (Cloudy weather)"
         )
     elif msg.message == "Drizzle":
         ctx.logger.info(
-            "Soft as a mystic's breath, a gentle drizzle blesses your enchanted realm. (Drizzle)"
+            "Soft drizzle, like faerie kisses, graces your mystical land. (Drizzle)"
         )
     elif msg.message == "Thunderstorm":
         ctx.logger.info(
-            "The elemental forces converge! A mystical tempest rages in your realm with thunderous might. (Thunderstorm)"
+            "Thunderous roar, a clash of titans, the storm giants awaken! (Thunderstorm)"
         )
     elif msg.message == "Clear":
         ctx.logger.info(
-            "The mystic veil lifts, revealing a realm of crystal clarity and boundless possibility. (Clear weather)"
+            "The realm basks in crystal clarity, as if gnomes polished the skies. (Clear weather)"
         )
     elif msg.message == "Atmosphere":
         ctx.logger.info(
-            "The mystical atmosphere stirs, revealing the ever-changing tapestry of your realm's weather. (Atmosphere)"
+            "The mystical atmosphere stirs with unseen energies, the creatures of the unseen realm are afoot. (Atmosphere)"
         )
 
     if msg.temperature < ctx.storage.get("min_temp"):

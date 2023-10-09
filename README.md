@@ -1,4 +1,13 @@
-# 🌦️ Alertify
+# 🌦️ MystiWeather
+
+**This repository is submitted for the IITB TechFest HackAI PS. Our Team ID is - `Hack-230494`**
+
+### Team Details:
+1. Ayush Awasthi - ayushawasthi2409@gmail.com
+2. Anushka Jha - anushkajha011103@gmail.com
+3. Aman Poddar - amanpoddar412@gmail.com
+4. Angela Singhal - angelagoldy20@gmail.com
+
 
 ## Overview
 
@@ -16,9 +25,11 @@ This app uses [uAgents](https://docs.fetch.ai/uAgents/) library to build agents 
 
 - The data inputs by the user is stored in the storage of the user_agent by using the storage functions of the uAgents library.
 
-- The user agent has an event handler for every 5 seconds i.e. it keeps on sending the location data to the weather agent at an interval of every 5 seconds to check the current temperature and alerts the user if required.
+- The user agent has an event handler for every 5 seconds i.e. it keeps on sending the location data to the weather agent at an interval of every 20 seconds (as temperature change is not that immediate) to check the current temperature and alerts the user if required.
 
-- We have tried to add all the necessary comments for the important steps of the code.
+- **We have tried to relate this application to the theme of the hackathon "The Mystical Realm" by rephrasing the prompts and alerts.**
+
+- We have also tried to add all the necessary comments for the important steps of the code.
 
 ## Prerequisites
 
@@ -82,8 +93,10 @@ Before running this application, you need to perform the following steps:
 
 3. The application will then retrieve the current temperature at your location using the OpenWeatherMap API and check if it falls outside the specified range.
 
-4. If the temperature is higher or lower than the specified thresholds, you will receive an alert. 🚨
+4. First of all the user agent will log the current weather by portraying it in a mystical way (to cater the needs of the theme of hackathon).
 
-5. You can exit the application by pressing Ctrl+C on your keyboard. 📴
+5. If the temperature is higher or lower than the specified thresholds, you will receive an alert. 🚨
+
+6. You can exit the application by pressing Ctrl+C on your keyboard. 📴
 
 Enjoy using this Alertify app!! ☔🌈🌞
