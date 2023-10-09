@@ -41,7 +41,7 @@ Before running this application, you need to perform the following steps:
 
    ```
    git clone https://github.com/ayushawasthi24/mystiweather
-   cd alertify
+   cd mystiweather
    ```
 
 1. **Get API Keys:**
