@@ -3,11 +3,11 @@
 **This repository is submitted for the IITB TechFest HackAI PS. Our Team ID is - `Hack-230494`**
 
 ### Team Details:
+
 1. Ayush Awasthi - ayushawasthi2409@gmail.com
 2. Anushka Jha - anushkajha011103@gmail.com
 3. Aman Poddar - amanpoddar412@gmail.com
 4. Angela Singhal - angelagoldy20@gmail.com
-
 
 ## Overview
 
@@ -15,7 +15,7 @@ This Weather Alert Application is a Python project that allows users to input th
 
 ## Description
 
-This app uses [uAgents](https://docs.fetch.ai/uAgents/) library to build agents for all kinds of decentralised use cases. In this app we have created two agents namely "weather_agent" and "user_agent" (in the `src/agents` directory). 
+This app uses [uAgents](https://docs.fetch.ai/uAgents/) library to build agents for all kinds of decentralised use cases. In this app we have created two agents namely "weather_agent" and "user_agent" (in the `src/agents` directory).
 
 - The "weather_agent" primarily focusses on getting the weather information of the location by using the OpenWeatherMap API. It uses the on_message protocol in such a way that whenever the user agent messages this weather agent with the location information (basically latitude and longitude), it fetches the weather data and responds to the user agent.
 
@@ -38,8 +38,9 @@ Before running this application, you need to perform the following steps:
 1. **Cloning the Project:**
 
    - Clone this repository using the following commands:
+
    ```
-   git clone https://github.com/ayushawasthi24/alertify
+   git clone https://github.com/ayushawasthi24/mystiweather
    cd alertify
    ```
 
@@ -49,8 +50,10 @@ Before running this application, you need to perform the following steps:
      - [OpenWeatherMap](https://openweathermap.org/api)
      - [Geoapify](https://www.geoapify.com/)
 
-2. **Create a .env file:**
+1. **Create a .env file:**
+
    - Navigate to the "src" folder:
+
    ```
    cd src
    ```
@@ -62,7 +65,7 @@ Before running this application, you need to perform the following steps:
    GEOAPIFY_API_KEY=your_geoapify_api_key
    ```
 
-3. **Install Dependencies:**
+1. **Install Dependencies:**
 
    - Ensure you have [Poetry](https://python-poetry.org/) installed. Poetry is used to manage dependencies and virtual environments.
    - Use Poetry to install project dependencies. Run the following command in the project directory:
@@ -71,7 +74,7 @@ Before running this application, you need to perform the following steps:
    poetry install
    ```
 
-4. **Activate the Virtual Environment:**
+1. **Activate the Virtual Environment:**
 
    - Activate the virtual environment using Poetry. Run the following command in the project directory:
 
@@ -79,7 +82,7 @@ Before running this application, you need to perform the following steps:
    poetry shell
    ```
 
-5. **Run the Application:**
+1. **Run the Application:**
    - After activating the virtual environment, you can run the main application script using the following command:
    ```
    python main.py
@@ -99,4 +102,4 @@ Before running this application, you need to perform the following steps:
 
 6. You can exit the application by pressing Ctrl+C on your keyboard. 📴
 
-Enjoy using this Alertify app!! ☔🌈🌞
+Enjoy using this MystiWeather app!! ☔🌈🌞
